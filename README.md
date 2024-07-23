@@ -24,7 +24,7 @@ This is a Telegram bot for managing grocery lists. It allows users to add, remov
 1. **Clone the repository:**
     ```bash
     git clone https://github.com/michimimi/groceriesbot.git
-    cd groceries
+    cd groceriesbot
     ```
 
 2. **Run the setup task:**

@@ -1,0 +1,18 @@
+version: '3'
+
+tasks:
+  install-dependencies:
+    desc: "Install necessary Python packages"
+    cmds:
+      - pip3 install -q pyyaml pymongo python-telegram-bot
+
+  create-config:
+    desc: "Create a config.yaml file with user input"
+    cmds:
+      - python3 create_config.py
+
+  setup:
+    desc: "Set up the project by installing dependencies and creating config file"
+    deps:
+      - install-dependencies
+      - create-config
